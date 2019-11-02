@@ -19,3 +19,18 @@
 5. Browse the code in `train.py`
     1. The `train.py` script is the entry point for training a model. It reads command-line arguments, loads the SQuAD dataset, and trains a model.
     2. You may find it helpful to browse the arguments provided by the starter code. Either look directly at the `parser.add_argument` lines in the source code, or run `python train.py -h`.
+
+## Code Review:
+
+### The repository squad contains the following files:
+* args.py: Command-line arguments for setup.py, train.py, and test.py.
+* environment.yml: List of packages in the conda virtual environment.
+* layers.py: Layers used by the models.
+* models.py: The starter model, and any others you might add.
+* setup.py: Downloads pretrained GloVe vectors and preprocesses the data.
+* train.py: Top-level entrypoint for training the model.
+* test.py: Top-level entrypoint for testing the model and generating submissions for the leaderboard.
+* util.py: Utility functions and classes.
+### In addition, you will notice two directories:
+* data/: Contains our custom SQuAD dataset, both the unprocessed JSON files, and (after running setup.py), all preprocessed files.
+* save/: Location for saving all checkpoints and logs. For example, if you train the baseline with python train.py -n baseline, then the logs, checkpoints, and TensorBoard events will be saved in save/train/baseline-01. The suffix number will increment if you train another model with the same name.
