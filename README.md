@@ -1,3 +1,11 @@
+## Activate
+* To activate this environment, use
+     $ conda activate squad
+* To deactivate an active environment, use
+     $ conda deactivate
+
+
+
 ## Setup
 
 1. Make sure you have [Miniconda](https://conda.io/docs/user-guide/install/index.html#regular-installation) installed
